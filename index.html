@@ -6,37 +6,43 @@
     <title>Loja de Instrumentos Musicais</title>
 </head>
 <body>
-    <h1>Loja de Instrumentos Musicais</h1>
+    <header>
+        <h1>Loja de Instrumentos Musicais</h1>
+    </header>
+    <main>
+        <p>O site tem como objetivo apresentar instrumentos de musicais e acessórios de forma simples e organizada</p>
+        <section>
+            <h2>Produtos disponíveis</h2>
+            <ul>
+                <li>Violões</li>
+                <li>Guitarras</li>
+                <li>Teclados</li>
+                <li>Baterias</li>
+            </ul>
+        </section>
 
-    <p>Nosso projeto tem como objetivo apresentar instrumentos musicais e acessórios de forma simples e organizada.</p>
+            <section>
+                <h2>Alguns instrumentos</h2>
+                <table>
+                    <tr>
+                        <th>Instrumento</th>
+                        <th>Categoria</th>
+                    </tr>
+                    <tr>
+                        <td>Violão</td>
+                        <td>Cordas</td>
+                    </tr>
+                    <tr>
+                        <td>Teclado</td>
+                        <td>Teclas</td>
+                    </tr>
+                    <tr>
+                        <td>Bateria</td>
+                        <td>Percussão</td>
+                    </tr>
+                </table>
+            </section>
 
-    <h2>Produtos disponíveis</h2>
-    <ul>
-        <li>Violões</li>
-        <li>Guitarras</li>
-        <li>Teclados</li>
-        <li>Baterias</li>
-    </ul>
-
-    <h2>Alguns instrumentos</h2>
-    <table>
-        <tr>
-            <th>Instrumento</th>
-            <th>Categoria</th>
-        </tr>
-        <tr>
-            <td>Violão</td>
-            <td>Cordas</td>
-        </tr>
-        <tr>
-            <td>Teclado</td>
-            <td>Teclas</td>
-        </tr>
-        <tr>
-            <td>Bateria</td>
-            <td>Percussão</td>
-        </tr>
-    </table>
 
     <h2>Saiba mais</h2>
     <p>
@@ -51,5 +57,32 @@
     <h2>Instrumentos musicais</h2>
     <img src="assets/images/instrumentos.webp"
          alt="Violão em uma loja de instrumentos musicais">
+         <section>
+            <h2>Tenho interesse em um instrumento</h2>
+            <form>
+                <fieldset>
+                    <legend>informações de interesse</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+                <label for="instrumento">Instrumento de interesse:</label>
+                <select name="instrumento" id="instrumento required">
+                    <option value="">Selecione um instrumento</option>
+                    <option value="Violão">Violão</option>
+                    <option value="guitarra">Guitarra</option>
+                    <option value="teclado">Teclado</option>
+                    <option value="bateria">Bateria</option>
+                </select>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" min="1" max="10" required>
+                </fieldset>
+                <button type=submit>Enviar Interesse</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Loja de instrumentos musicais - projeto integrado</p>
+    </footer>
 </body>
 </html>
